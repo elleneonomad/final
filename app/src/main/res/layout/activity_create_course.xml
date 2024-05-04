@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CreateCourse"
+    android:background="@color/yellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="RB ATTENDANCE"
+                    android:textColor="@color/yellow"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/logo"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <Button
+            android:textColor="@color/yellow"
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:backgroundTint="@color/white"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Create Course"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:padding="12dp"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/courseCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Code"
+        android:inputType="textCapCharacters"
+        android:padding="12dp"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Time (e.g., 09:00 AM)"
+        android:inputType="time"
+        android:padding="12dp"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Time (e.g., 10:30 AM)"
+        android:inputType="time"
+        android:padding="12dp"
+        android:layout_margin="16dp"/>
+
+    <CheckBox
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/checkBox_monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:layout_margin="16dp"/>
+
+    <CheckBox
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/checkBox_tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuesday"
+        android:layout_margin="16dp"/>
+
+    <CheckBox
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/checkBox_wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wednesday"
+        android:layout_margin="16dp"/>
+
+    <CheckBox
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/checkBox_thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday"
+        android:layout_margin="16dp"/>
+
+    <CheckBox
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/checkBox_friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friday"
+        android:layout_margin="16dp"/>
+    <CheckBox
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/checkBox_saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturday"
+        android:layout_margin="16dp"/>
+        <CheckBox
+            android:buttonTint="@color/white"
+            android:textColor="@color/white"
+            android:id="@+id/checkBox_sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunday"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:backgroundTint="@color/white"
+            android:id="@+id/button_create_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="Create Course"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/yellow"/>
+    </LinearLayout>
+</ScrollView>
